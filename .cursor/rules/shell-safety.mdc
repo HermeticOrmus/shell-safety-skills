@@ -1,0 +1,44 @@
+---
+description: Shell-safety discipline for any bash/sh/Makefile/.bashrc/.zshrc. set -euo pipefail + IFS + quoting + array hygiene + anti-patterns.
+globs:
+  - "**/*.sh"
+  - "**/*.bash"
+  - "**/Makefile"
+  - "**/.bashrc"
+  - "**/.zshrc"
+  - "**/scripts/**"
+alwaysApply: false
+---
+
+# Shell safety
+
+Apply to every shell script. Bash is forgiving in dangerous ways — these defaults catch common bugs.
+
+## Boilerplate every script needs
+
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+IFS=$'\n\t'
+```
+
+## Always
+
+- Quote variable expansions: `"$var"`, `"${var}"`, `"$@"`
+- `[[ ... ]]` over `[ ... ]`
+- `(( ... ))` for numeric comparison
+- Arrays for argument lists: `args=(...)`, expand `"${args[@]}"`
+- `done < <(cmd)` not `cmd | while read`
+- `rm -rf "${var:?}/..."` for destructive ops with required var
+
+## Never
+
+- Missing shebang
+- Missing `set -euo pipefail`
+- Unquoted variable expansion
+- `cd dir` without `&& ...` or `|| exit`
+- `rm -rf "$var/"` without `${var:?}` guard
+- `eval` (almost always wrong)
+- Long pipelines without `pipefail`
+- `for line in $(cat file)` — use `while IFS= read -r line; do ... done < file`
+- `echo` on untrusted data — use `printf '%s\n'`
