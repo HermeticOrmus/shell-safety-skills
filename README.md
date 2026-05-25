@@ -1,6 +1,23 @@
-# Shell Safety Skills
+<p align="center">
+  <img src="https://ormus.solutions/mascot/chain_braces_to_swan.gif" alt="Shell Safety Skills" width="128" style="image-rendering: pixelated;" />
+</p>
 
-> A single `CLAUDE.md` for shell-safety discipline. `set -euo pipefail` boilerplate, proper quoting, array handling, error patterns, anti-patterns. Universal bash hygiene for AI-generated shell scripts.
+<h1 align="center">Shell Safety Skills</h1>
+
+<p align="center">
+  <em>A CLAUDE.md for shell-safety discipline — set -euo pipefail boilerplate, proper quoting, array usage, error handling, anti-patterns. Universal bash hygiene for AI-generated shell scripts.</em>
+</p>
+
+<p align="center">
+  <a href="https://github.com/HermeticOrmus/shell-safety-skills/stargazers"><img src="https://img.shields.io/github/stars/HermeticOrmus/shell-safety-skills?style=flat-square&color=aa8142" alt="Stars" /></a>
+  <a href="https://github.com/HermeticOrmus/shell-safety-skills/blob/main/LICENSE"><img src="https://img.shields.io/github/license/HermeticOrmus/shell-safety-skills?style=flat-square&color=aa8142" alt="License" /></a>
+  <a href="https://github.com/HermeticOrmus/shell-safety-skills/commits"><img src="https://img.shields.io/github/last-commit/HermeticOrmus/shell-safety-skills?style=flat-square&color=aa8142" alt="Last Commit" /></a>
+  <img src="https://img.shields.io/badge/Claude_Code-aa8142?style=flat-square&logo=anthropic&logoColor=white" alt="Claude Code" />
+</p>
+
+---
+
+> **A single `CLAUDE.md` for shell-safety discipline. `set -euo pipefail` boilerplate, proper quoting, array handling, error patterns, anti-patterns. Universal bash hygiene for AI-generated shell scripts.**
 
 ## The problem
 
