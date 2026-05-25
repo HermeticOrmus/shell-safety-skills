@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://ormus.solutions/mascot/golden_swan.gif" alt="Shell Safety Skills" width="128" style="image-rendering: pixelated;" />
+  <img src="https://ormus.solutions/mascot/pixellab_liquid_to_key.gif" alt="Shell Safety Skills" width="128" style="image-rendering: pixelated;" />
 </p>
 
 <h1 align="center">Shell Safety Skills</h1>
